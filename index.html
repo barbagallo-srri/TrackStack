@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackStack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+<body>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+          <a class="navbar-brand d-grid text-center" href="#">
+              <div class="align-content-center">
+                  <img src="https://marcobarbagallo.altervista.org/Gallery/logo2.png" alt="Logo" width="35" height="35" class="align-content-center">
+              </div>
+              <span id="nav-titolo" class="">TrackStack</span>
+          </a>
+      </div>
+    </div>  
+  </nav>
+  
+  <div class="container d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center justify-content-lg-between vh-100 vw-100">
+    <div class="col-md-6 d-none d-lg-block">
+      <h1 class="display-1" id="main-titolo">TrackStack</h1>
+      <h5 id="vision"> Un nuovo modo di vivere la musica</h5>
+    </div>
+    <div class="col-auto d-block d-lg-none">
+      <h1 class="display-1 text-center" id="main-titolo">TrackStack</h1>
+      <h6 id="vision" class="text-center"> Un nuovo modo di vivere la musica</h6>
+    </div>
+    <div class="col-md-6">
+      <div class="row d-flex justify-content-center justify-content-lg-end">
+          <div class="col col-lg-10">
+            <div id="div_login" class="p-5 rounded-4">
+              <h2 class="mb-4 text-center" id="typeAccedi">Accedi a TrackStack</h2>
+              <div class="mb-3">
+                <form id="loginForm" action="/login" method="post">
+
+                  <!-- Campi di login -->
+                    <div id="loginFields" style="display:block;">
+                      <div class="input-group mb-1">
+                        <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                          <div class="col text-center text-white">
+                            Username
+                          </div>
+                        </span>
+                        <input type="text" id="loginUsername" name="loginUsername" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                      </div>
+
+                      <div class="input-group mb-1">
+                        <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                          <div class="col text-center text-white">
+                            Password
+                          </div>
+                        </span>
+                        <input type="password" id="loginPassword" name="loginPassword" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                      </div>
+                    </div>
+
+                  <p id="loginSbagliato" style="color: #CF4053; display: none;">Username o Password errati</p>
+                  <p id="registerChecked" style="color: #198755; display: none;">Registrazione avvenuta con Successo</p>
+                  </div>
+
+                  <!-- Campi di registrazione (inizialmente nascosti) -->
+                  <div id="registrationFields" style="display:none;">
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Nome
+                        </div>
+                      </span>
+                      <input type="text" id="regNome" name="regNome" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Cognome
+                        </div>
+                      </span>
+                      <input type="text" id="regCognome" name="regCognome" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Email
+                        </div>
+                      </span>
+                      <input type="text" id="regEmail" name="regEmail" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Username
+                        </div>
+                      </span>
+                      <input type="text" id="regUsername" name="regUsername" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Data
+                        </div>
+                      </span>
+                      <input type="date" id="regDataNascita" name="regDataNascita" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                         Password
+                        </div>
+                      </span>
+                      <input type="password" id="regPassword" name="regPassword" class="form-control bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" required>
+                    </div>
+
+                    <div class="input-group mb-1">
+                      <span class="input-group-text col-5 col-sm-4 col-md-4 col-xl-4 col-xxl-3 bg-success bg-opacity-25 border border-success border-opacity-50 rounded-start-5 rounded-top-5 m-2 p-1" id="inputGroup-sizing-default">
+                        <div class="col text-center text-white">
+                          Generi Musicali
+                        </div>
+                      </span>
+                      <select id="regGeneriMusicali" name="regGeneriMusicali[]" class="form-select bg-black bg-opacity-25 border border-success border-opacity-25 rounded-end-5 rounded-bottom-5 m-1" multiple required>
+                        <option value="rap">Rap</option>
+                        <option value="reggae">Reggae</option>
+                        <option value="trap">Trap</option>
+                        <option value="metal">Metal</option>
+                        <!-- Aggiungi altri generi musicali secondo necessità -->
+                      </select>
+                    </div>
+
+
+                  </div>
+
+            
+                  <!-- Bottoni Accedi/Iscriviti -->
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-success rounded-5" id="loginButton" onclick="login()">Login</button>
+                    <button class="btn btn-outline-success rounded-5" id="registerButton" value="Accedi" type="button" onclick="registrationForm()()">Iscriviti</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+       </div>           
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
+</body>
+</html>

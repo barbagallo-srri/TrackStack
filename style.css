@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,700&display=swap');
+
+body .container.vh-100 {
+  height: 75vh !important;
+}
+
+#div_login {
+  margin-top: 20px; /* Puoi regolare il valore secondo le tue preferenze */
+}
+
+
+#main-titolo{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0 0 10px white;
+    animation: shadow-animation 4s ease-in-out infinite;
+}
+
+
+@keyframes shadow-animation {
+  0% {
+      text-shadow: 0 0 5px white;
+  }
+  25% {
+      text-shadow: 0 0 10px white;
+  }
+  50% {
+      text-shadow: 0 0 15px white;
+  }
+  75% {
+      text-shadow: 0 0 10px white;
+  }
+  100% {
+      text-shadow: 0 0 5px white;
+  }
+}
+
+
+#vision{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+#nav-titolo{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#div_login{
+  height: 90%;
+  box-shadow: 0 .075rem .255rem rgba(0, 0, 0, 0.471);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#div_login:hover{
+  box-shadow: 0 .075rem .52rem rgba(0, 0, 0, 0.671);
+}
+
+#submit{
+  box-shadow: 0 .075rem .255rem rgba(1, 191, 89, 0.471);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#submit:hover{
+  box-shadow: 0 .075rem .52rem rgba(0, 255, 110, 0.671);
+}
+
+#schedaUtente{
+  box-shadow: 0 .075rem .255rem rgba(0, 0, 0, 0.471);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#schedaUtente:hover{
+  box-shadow: 0 .075rem .52rem rgba(0, 0, 0, 0.671);
+}
+
+#deleteAccountForm{
+  box-shadow: 0 .075rem .255rem rgba(0, 0, 0, 0.471);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#deleteAccountForm:hover{
+  box-shadow: 0 .075rem .52rem rgba(0, 0, 0, 0.671);
+}
+
+.dropdown-menu-scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+}
